@@ -1,0 +1,53 @@
+//JDX_DATABASE JDX:jdbc:sqlite:./config/json_example.db;USER=sa;PASSWORD=sa;JDX_DBTYPE=SQLITE;DEBUG_LEVEL=5
+//JDBC_DRIVER org.sqlite.JDBC
+
+// Hard coding of the IP address of a MySQL database instance is needed to access the database 
+// from within a docker container. Same for a Postgres database.
+// On Windows 10, use "ipconfig /all" on command line to get IPv4 Address (e.g. 174.18.38.81) under 
+// Ethernet adapter vEthernet (Default Switch) line and use that instead of "localhost" in the JDBC url below:
+
+ //JDX_DATABASE JDX:jdbc:mysql://localhost:3306/JDXTestDB?useSSL=false;USER=sagar;PASSWORD=sagar333;JDX_DBTYPE=MYSQL;DEBUG_LEVEL=5
+ //JDX_DATABASE JDX:jdbc:mysql://host.docker.internal:3306/JDXTestDB?useSSL=false;allowPublicKeyRetrieval=true;USER=root;PASSWORD=sagar333;JDX_DBTYPE=MYSQL;DEBUG_LEVEL=3
+
+ //JDBC_DRIVER com.mysql.cj.jdbc.Driver
+
+ JDX_DATABASE JDX:jdbc:postgresql://host.docker.internal:5432/jdxtestdb;USER=postgres;PASSWORD=sagar333;JDX_DBTYPE=POSTGRES;DEBUG_LEVEL=3
+ JDBC_DRIVER org.postgresql.Driver
+;
+REM ************************************************************************
+CLASS javasrcDB1.src.main.java.models.JSON_Vehicle TABLE Vehicle
+
+  // First declare all the persistent JSON properties using VIRTUAL_ATTRIB specifications
+  VIRTUAL_ATTRIB Vehicle_id ATTRIB_TYPE int
+  VIRTUAL_ATTRIB Type ATTRIB_TYPE java.lang.String
+  
+  
+  VIRTUAL_ATTRIB Number_of_Vehicles ATTRIB_TYPE int
+
+  // date is represented as long (number of milliseconds) for a JSON
+  // object since there is no standard JSON string format for date representation
+  
+
+  // Now provide the rest of the mapping specification for this class
+  PRIMARY_KEY Vehicle_id
+  
+;
+CLASS javasrcDB1.src.main.java.models.JSON_Buyer TABLE Buyer
+
+  // First declare all the persistent JSON properties using VIRTUAL_ATTRIB specifications
+  VIRTUAL_ATTRIB Vehicle_id ATTRIB_TYPE int
+  VIRTUAL_ATTRIB Buyer_id ATTRIB_TYPE int
+  VIRTUAL_ATTRIB Phone_Number ATTRIB_TYPE long
+  
+  
+  VIRTUAL_ATTRIB price ATTRIB_TYPE int
+
+  // date is represented as long (number of milliseconds) for a JSON
+  // object since there is no standard JSON string format for date representation
+  
+
+  // Now provide the rest of the mapping specification for this class
+  PRIMARY_KEY Buyer_id
+  
+;
+
