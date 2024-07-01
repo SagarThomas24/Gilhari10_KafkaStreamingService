@@ -15,7 +15,7 @@
 // JDBC_DRIVER org.postgresql.Driver
 ;
 REM ************************************************************************
-CLASS javasrc.src.main.java.models.JSON_Employee TABLE Employee
+CLASS javasrc.com.mycompany.gilhari10.model.JSON_Employee TABLE Employee
 
   // First declare all the persistent JSON properties using VIRTUAL_ATTRIB specifications
   VIRTUAL_ATTRIB id ATTRIB_TYPE int
@@ -33,7 +33,7 @@ CLASS javasrc.src.main.java.models.JSON_Employee TABLE Employee
   
   SQLMAP FOR compensation COLUMN_NAME salary
 ;
-CLASS javasrc.src.main.java.models.JSON_Department TABLE Department
+CLASS com.mycompany.gilhari10.model.JSON_Department TABLE Department
 
   // First declare all the persistent JSON properties using VIRTUAL_ATTRIB specifications
   VIRTUAL_ATTRIB dno ATTRIB_TYPE int
