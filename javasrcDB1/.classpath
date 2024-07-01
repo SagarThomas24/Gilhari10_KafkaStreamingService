@@ -1,5 +1,5 @@
 <classpath>
-    <classpathentry kind="src" path="src/main/java/models"/>
+    <classpathentry kind="src" path="com/mycompany/gilhari10/model"/>
     <classpathentry kind="lib" path="lib/json-20160212.jar"/>
     <classpathentry kind="lib" path="lib/jxclasses.jar">
     <classpathentry kind="output" path="bin"/>
