@@ -2,9 +2,9 @@
 
 This example demonstrates the use and versatility of the Gilhari microservice for managing data across two different databases: PostgreSQL and MySQL. By effectively utilizing Gilhari, we showcase a seamless and user-friendly approach to storing different Kafka topics in distinct databases.
 
-- **Employee Management System**: Data related to employees, such as their personal information, job details, and departmental assignments, is streamed and stored in PostgreSQL. This ensures robust and scalable management of employee records.
+- **Employee Management System**: Data related to employees, such as their personal information, job details, and departmental assignments, is streamed and stored in MySQL. This ensures robust and scalable management of employee records.
 
-- **Motor Vehicle Dealership System**: Data related to vehicle inventory, sales, and customer information is streamed and stored in MySQL. This setup allows for efficient handling and querying of dealership operations.
+- **Motor Vehicle Dealership System**: Data related to vehicle inventory, sales, and customer information is streamed and stored in PostgreSQL. This setup allows for efficient handling and querying of dealership operations.
 
 - **Kafka Topics**: Two Kafka topics are utilized:
   - **Topic 1**: Streams data related to the Employee Management System and routes it to the MySQL database.
