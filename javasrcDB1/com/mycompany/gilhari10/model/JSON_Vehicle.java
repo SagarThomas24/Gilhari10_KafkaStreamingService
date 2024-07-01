@@ -1,4 +1,4 @@
-package javasrcDB1.src.main.java.models;
+package javasrcDB1.com.mycompany.gilhari10.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
