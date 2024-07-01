@@ -31,7 +31,7 @@ This file lists out the steps taken to configure the Gilhari microservice . In t
 1. Create the Dockerfile as shown in the project directory.
 2. Build the Docker image using the following command:
     ```bash
-    docker build -t my_app_gilhari -f ./Dockerfile .
+    docker build -t my_app_gilhari -f ./Gilhari10_Mysql .
     ```
     `my_app_gilhari`- this could be any name of your choice.
 
