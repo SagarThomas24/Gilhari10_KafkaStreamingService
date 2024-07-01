@@ -13,7 +13,7 @@ BASE_URL = 'http://localhost:80/gilhari/v1'
 endpoint = 'Employee'
 
 def get_attribues(dept_number):
-    url = f"http://localhost:80/jdx/v1/Department/getObjectById?filter=dno={dept_number}"
+   
     response = requests.get(f'http://localhost:80/jdx/v1/Department/getObjectById?filter=dno={dept_number}')
     if response.status_code == 200:
         Number_of_E_before = response.json()['Nmuber_of_Employees']
