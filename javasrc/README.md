@@ -4,18 +4,18 @@ This file lists out the steps taken to configure the Gilhari microservice . In t
 
 ## Step 1: Define and Compile Empty Java (Container) Class
 
-1. In `src/main/java/models`, create a class file `JSON_Employee.java`  (derived from Software Tree's JDX).
+1. In `com/mycompany/gilhari10/model`, create a class file `JSON_Employee.java`  (derived from Software Tree's JDX).
 2. Similarly, create class files `JSON_Department.java`.
 
 3. In the `lib/` directory, add the required .jar files `json-20160212.jar` and `jxclasses.jar` found in the gilhari SDK `lib\` directory.
 
 4. In a terminal, navigate to `./javasrc` and run the following command to compile `JSON_Employee.java`:
     ```bash
-    javac -cp "lib/json-20160212.jar:lib/jxclasses.jar" -d bin src/main/java/models/JSON_Employee.java
+    javac -cp "lib/json-20160212.jar:lib/jxclasses.jar" -d bin com/mycompany/gilhari10/model/JSON_Employee.java
     ```
 5. Also compile the `JSON_Department.java` using the command:
     ```bash
-    javac -cp "lib/json-20240303.jar:lib/jxclasses.jar" -d bin src/main/java/models/JSON_Department.java
+    javac -cp "lib/json-20240303.jar:lib/jxclasses.jar" -d bin com/mycompany/gilhari10/model/JSON_Department.java
     
     ```
 
