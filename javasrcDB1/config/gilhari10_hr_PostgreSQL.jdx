@@ -2,7 +2,7 @@
  JDBC_DRIVER org.postgresql.Driver
 ;
 REM ************************************************************************
-CLASS javasrcDB1.src.main.java.models.JSON_Vehicle TABLE Vehicle
+CLASS javasrcDB1.com.mycompany.gilhari10.model.JSON_Vehicle TABLE Vehicle
 
   // First declare all the persistent JSON properties using VIRTUAL_ATTRIB specifications
   VIRTUAL_ATTRIB Vehicle_id ATTRIB_TYPE int
@@ -19,7 +19,7 @@ CLASS javasrcDB1.src.main.java.models.JSON_Vehicle TABLE Vehicle
   PRIMARY_KEY Vehicle_id
   
 ;
-CLASS javasrcDB1.src.main.java.models.JSON_Buyer TABLE Buyer
+CLASS javasrcDB1.com.mycompany.gilhari10.model.JSON_Buyer TABLE Buyer
 
   // First declare all the persistent JSON properties using VIRTUAL_ATTRIB specifications
   VIRTUAL_ATTRIB Vehicle_id ATTRIB_TYPE int
