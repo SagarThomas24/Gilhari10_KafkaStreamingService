@@ -11,7 +11,7 @@ This document provides an overview of the Python scripts used for producing and 
 ### Consumer Script
 - **`emp_consumer.py`**: Consumes employee data from Kafka topic `T1` and updates the department's number of employees in the database.
 
--**`Buyer_consumer.py`** : Consumes Buyer data from Kafka topic `T2` and updates the Vehicle's number of Vechicles remaining in the database.
+- **`Buyer_consumer.py`** : Consumes Buyer data from Kafka topic `T2` and updates the Vehicle's number of Vechicles remaining in the database.
 
 ### Data Management Scripts
 - **`Vehicle.py`**: Sends predefined vehicle data to the Gilhari microservice.
