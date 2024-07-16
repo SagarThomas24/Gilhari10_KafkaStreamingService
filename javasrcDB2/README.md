@@ -9,7 +9,7 @@ This file lists out the steps taken to configure the Gilhari microservice . In t
 
 3. In the `lib/` directory, add the required .jar files `json-20160212.jar` and `jxclasses.jar` found in the gilhari SDK `lib\` directory.
 
-4. In a terminal, navigate to `./javasrc` and run the following command to compile `JSON_Employee.java`:
+4. In a terminal, navigate to `./javasrcDB2` and run the following command to compile `JSON_Employee.java`:
     ```bash
     javac -cp "lib/json-20160212.jar:lib/jxclasses.jar" -d bin src/main/java/models/JSON_Employee.java
     ```
