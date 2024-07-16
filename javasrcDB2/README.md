@@ -24,7 +24,7 @@ This file lists out the steps taken to configure the Gilhari microservice . In t
 1. In the `config/` directory, create a file named `gilhari_streaming_example.jdx` as shown.
 2. Add the database's JDBC driver (e.g., MySQL's) as a .jar file to `config/`.
 3. Add a file `classnames_map_example.js` to `config/` to map "Employees" to the defined `Employee` container class. Repeat the same for the other  class.
-4. Add a file `gilhari_service.config` to `javasrc/` and fill in the required fields. Refer to the Gilhari documentation for more information on the .config file and its fields.
+4. Add a file `gilhari_service.config` to `javasrcDB2/` and fill in the required fields. Refer to the Gilhari documentation for more information on the .config file and its fields.
 
 ## Step 3: Create a Dockerfile, Build and Run the Container
 
