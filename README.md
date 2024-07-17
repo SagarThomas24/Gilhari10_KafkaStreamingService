@@ -34,7 +34,7 @@ This repository contains the following folders:
 
 For more detailed information on each folder, please refer to their respective README files:
 
-- [javasrc README](javasrc/README.md)
+- [javasrcDB2 README](javasrcDB2/README.md)
 - [javasrcDB1 README](javasrcDB1/README.md)
 - [src README](src/README.md)
 
