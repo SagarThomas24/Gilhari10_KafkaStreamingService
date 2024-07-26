@@ -39,12 +39,24 @@ For more detailed information on each folder, please refer to their respective R
 - [src README](src/README.md)
 
 ## How to Deploy on Azure Cloud
--   Login into the Azure portal with any email account
--   Create a Mysql Azure database by filling in the nescessary details.
--   Create a PostGres Azure database by filling in the nescessary details.
--   Once you have created the Azure cloud databases with the required server name and password create a new server in your systems' Mysql workbench and Pgadmin(Postgres)
--   In the mapping files of the javasrcDB1 and javasrcDB2 change the server name which was initially set to your local systems databases to the azure cloud database .
-  
+
+1. **Login to the Azure portal**
+    - Open the Azure portal and log in with your email account.
+
+2. **Create Azure Databases**
+    - Create a MySQL Azure database by filling in the necessary details.
+    - Create a PostgreSQL Azure database by filling in the necessary details.
+
+3. **Setup Local Database Management Tools**
+    - For MySQL, create a new server in MySQL Workbench using the Azure database details.
+    - For PostgreSQL, create a new server in pgAdmin using the Azure database details.
+
+4. **Configure Database Connections**
+    - In the mapping files of the `javasrcDB1` and `javasrcDB2` folders, update the server name and credentials to point to the Azure cloud databases instead of the local systems databases.
+
+
+
+## 
 
 
 
