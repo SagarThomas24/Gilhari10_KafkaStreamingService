@@ -39,7 +39,7 @@ For more detailed information on each folder, please refer to their respective R
 - [src README](src/README.md)
 
 ## How to Deploy on Azure Cloud
-
+- **Step 1**
 
 
 
