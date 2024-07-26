@@ -28,8 +28,8 @@ By leveraging the capabilities of Kafka and Gilhari, this example illustrates a 
 
 This repository contains the following folders:
 
-- **javasrc**: Contains Java source code specific to database 2     (MySQL)
-- **javasrcDB1**: Contains Java source code specific to database 1 (PostgreSQL).
+- **javasrc**: Contains Java source code specific to database 2     (Azure MySQL)
+- **javasrcDB1**: Contains Java source code specific to database 1 (Azure PostgreSQL).
 - **src**: Contains other source code for the project.
 
 For more detailed information on each folder, please refer to their respective README files:
@@ -37,6 +37,8 @@ For more detailed information on each folder, please refer to their respective R
 - [javasrcDB2 README](javasrcDB2/README.md)
 - [javasrcDB1 README](javasrcDB1/README.md)
 - [src README](src/README.md)
+
+## How to Deploy on Azure Cloud
 
 
 
