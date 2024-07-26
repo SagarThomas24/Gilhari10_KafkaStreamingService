@@ -56,8 +56,13 @@ For more detailed information on each folder, please refer to their respective R
 
 
 
-## 
+## Running the Project
 
+1. **Clone the Repository**
+    ```sh
+    git clone https://github.com/SagarThomas24/Gilhari10_KafkaStreamingService
+    cd yourrepository
+    ```
 
 
 
