@@ -63,6 +63,20 @@ For more detailed information on each folder, please refer to their respective R
     git clone https://github.com/SagarThomas24/Gilhari10_KafkaStreamingService
     cd yourrepository
     ```
+2. **Run the Docker Compose**
+    - Ensure the Docker daemon is running.
+    - Run the following command to start the services:
+    ```sh
+    docker-compose up -d
+    ```
+5. **Fill Database Tables Before startingthe streaming service**
+    - Once all the necessary Kafka and microservices are running, fill in the database tables by running the following Python scripts:
+    ```sh
+    python department.py  # For MySQL database
+    python vehicle.py     # For PostgreSQL database
+    ```
+
+
 
 
 
